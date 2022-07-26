@@ -1,10 +1,10 @@
 node{
 
-   def tomcatWeb = 'c:\\apache-tomcat-9.0.64\\webapps'
-   def tomcatBin = 'c:\\apache-tomcat-9.0.64\\bin'
+   def tomcatWeb = 'C:\apache-tomcat-9.0.64\webapps' 
+   def tomcatBin = 'C:\apache-tomcat-9.0.64\bin'
    def tomcatStatus = ''
    stage('SCM Checkout'){
-     git 'https://github.com/Ram450/Webpageapp'
+     git 'https://github.com/Ram450/Webpageapp.git'
    }
    stage('Compile-Package-create-war-file'){
       // Get maven home path
